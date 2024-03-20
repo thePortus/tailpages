@@ -1,6 +1,6 @@
 # change the followings to match your Github username and repo name
 baseurl: "/tailpages" # the name of your github repo
-url: "https://harrywang.github.io" # the url of your github pages
+url: "https://theportus.github.io" # the url of your github pages
 
 # site information used in page title, meta data etc.
 title: "Tailpages: Tailwind + Github Pages"
@@ -20,8 +20,6 @@ show-nav-menu: true
 nav-menu:
 - text: About
   permalink: about
-- text: Bitcoin
-  permalink: bitcoin
 - text: Blog
   permalink: blog
 
@@ -36,12 +34,19 @@ google-scholar: false
 email: false
 
 # footer information
-footer-msg: "Powered by Tailpages"
-footer-msg-link: https://github.com/harrywang/tailpages
+# footer-msg: "Powered by Tailpages"
+# footer-msg-link: https://github.com/harrywang/tailpages
 
 # google analytics
-google-analytics: G-WCRC1TC2V5
+# google-analytics:
+
+include:
+  - _pages
+
+paginate: 5
 
 # jekyll plugins - no need to change
 plugins:
     - jekyll-seo-tag
+    - jekyll-feed
+    - jekyll-paginate

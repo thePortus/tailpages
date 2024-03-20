@@ -5,6 +5,21 @@ layout: default
   {% include nav.html%}
 {% endif %}
 
+<div class="px-2 w-full search-bar">
+  <input class="w-full my-3 p-2" type="text" id="search-input" placeholder="Search blog posts..">
+  <ul id="results-container"></ul>
+
+  <!-- Configuration -->
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: "{{ 'search.json' | relative_url }}" ,
+      searchResultTemplate: '<li><a href="{{ site.url }}/{url}">{title}</a></li>'
+    })
+  </script>
+</div>
+
 <div class="mx-auto text-center prose prose-{{site.theme-color}}">
   <div>
     <img class="object-cover mx-auto h-36 w-36 rounded-full" src="{{site.baseurl}}/assets/img/{{site.author-image}}"
@@ -16,6 +31,8 @@ layout: default
   {% endif %}
 </div>
 </div>
+
+{{ content }}
 
 {% include social-media.html %}
 {% include footer.html %}
