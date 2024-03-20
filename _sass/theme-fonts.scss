@@ -1,0 +1,39 @@
+/* Define the site and header fonts */
+
+/* import statements from fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title-font {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: $link-base-color !important;
+}
+
+a:visited {
+  color: $link-visited-color !important;
+}
+
+a:hover {
+  color: $link-hover-color !important;
+}
+
+/* a element settings for the header */
+header a, header a:visited {
+  color: $link-header-base-color !important;
+}
+
+header a:hover {
+  color: $link-header-hover-color !important;
+}

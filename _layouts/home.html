@@ -1,10 +1,6 @@
 ---
 layout: default
 ---
-{% if site.show-nav-menu %}
-  {% include nav.html%}
-{% endif %}
-
 <div class="px-2 w-full search-bar">
   <input class="w-full my-3 p-2" type="text" id="search-input" placeholder="Search blog posts..">
   <ul id="results-container"></ul>
@@ -24,7 +20,7 @@ layout: default
   <div>
     <img class="object-cover mx-auto h-36 w-36 rounded-full" src="{{site.baseurl}}/assets/img/{{site.author-image}}"
       alt="author profile image">
-    <h1>{{site.author}}</h1>
+    <h1 class="title-font">{{site.author}}</h1>
   </div>
   {% if site.author-bio %}
   <p class="text-gray-500 pb-4">{{site.author-bio}}</p>
@@ -35,4 +31,3 @@ layout: default
 {{ content }}
 
 {% include social-media.html %}
-{% include footer.html %}

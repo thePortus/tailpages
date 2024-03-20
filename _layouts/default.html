@@ -3,9 +3,12 @@
 
 {%- include head.html -%}
 
-<body class="font-sans mx-auto max-w-prose">
-  <div class="pt-12 pb-4">
-    {{ content }}
+<body class="font-sans w-full h-full">
+  {%- include header.html -%}
+  <div class="w-full h-full flex flex-col justify-start items-center content-wrapper">
+    <div class="content-container p-5">
+      {{ content }}
+    </div>
   </div>
 </body>
 

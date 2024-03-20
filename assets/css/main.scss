@@ -4,43 +4,7 @@
 @tailwind utilities;
 @tailwind components;
 
-$text-color: #000000;
-$background-color: #FFFFFF;
-$background-undercolor: #fff3d9;
-$link-base-color: #FF872A;
-$link-visited-color: #FF872A;
-$link-hover-color: #FF9D52;
-$brand-color: #FF872A;
-$border-color-01: black;
-$border-color-02: black;
-$border-color-03: black;
-$code-background-color: grey;
-$table-text-color: black;
-$table-border-color: black;
-$table-zebra-color: grey;
-$table-header-bg-color: grey;
-$table-header-border: black;
-$site-title-color: #FF872A;
-$site-header-color: #074778;
-$search-bar-background: #6EA7D3;
-$search-bar-results: #ffe1c9;
-$search-bar-border: #074778;
-$code-snippet-color: #d6edff;
-$page-border-color: #F5A600;
-
-.search-bar {
-    background-color: $search-bar-background;
-    border-color: $search-bar-border;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.search-bar input {
-    border-radius: 10px;
-}
-
-.search-bar a:link, .search-bar a:hover, .search-bar a:visited {
-    color: $search-bar-results;
-}
+@import "theme-colors";
+@import "theme-layout";
+@import "theme-fonts";
+@import "custom-styles";
