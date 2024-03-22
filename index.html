@@ -1,5 +1,47 @@
 ---
-layout: home
+layout: default
 title: Home
-permalink: /
+
 ---
+
+<div class="px-2 w-full search-bar">
+    <input class="w-full my-3 p-2" type="text" id="search-input" placeholder="Search blog posts..">
+    <ul id="results-container"></ul>
+  
+    <!-- Configuration -->
+    <script>
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: "{{ 'search.json' | relative_url }}" ,
+        searchResultTemplate: '<li><a href="{{ site.url }}/{url}">{title}</a></li>'
+      })
+    </script>
+</div>
+
+<div>
+  {% for post in paginator.posts %}
+    <div class="py-1">
+      <h3><a href="{{site.baseurl}}{{ post.url }}">{{ post.title}}</a></h3>
+      <div class="text-sm text-gray-400">{{post.date | date: "%B %-d, %Y"}}</div>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>

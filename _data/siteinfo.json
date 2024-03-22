@@ -1,5 +1,7 @@
 {
     "name": "thePortus",
-    "credit": "David J. Thomas",
-    "email": "thomaei@bc.edu"
+    "credits": [{
+        "name": "David J. Thomas",
+        "email": "thomaei@bc.edu"
+    }]
 }

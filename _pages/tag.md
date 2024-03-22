@@ -1,7 +1,7 @@
 ---
 layout: tag
 title: Tags
-permalink: tag
+permalink: tags
 ---
 
 {% for tag in site.tags %}
