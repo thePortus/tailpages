@@ -69,11 +69,11 @@ footer {
 
 /* a element settings for the header */
 footer a, header a:visited {
-    color: $link-header-base-color !important;
+    color: $link-footer-base-color !important;
 }
   
 footer a:hover {
-    color: $link-header-hover-color !important;
+    color: $link-footer-hover-color !important;
 }
 
 .header-container {
