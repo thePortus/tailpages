@@ -60,9 +60,35 @@ header a:hover {
     color: $link-header-hover-color !important;
 }
 
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    z-index: 999;
+}
+
+/* a element settings for the header */
+footer a, header a:visited {
+    color: $link-header-base-color !important;
+}
+  
+footer a:hover {
+    color: $link-header-hover-color !important;
+}
+
 .header-container {
     width: $site-header-width;
     background-color: $site-header-color;
+    color: $header-text-color;
+}
+
+.footer-container {
+    width: $site-footer-width;
+    background-color: $site-footer-color;
+    color: $footer-text-color;
+}
+
+.site-title {
     color: $site-title-color;
 }
 

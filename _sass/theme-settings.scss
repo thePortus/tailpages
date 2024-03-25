@@ -6,20 +6,26 @@
 $site-background-color: #FFFFFF; // base background color for the site
 $site-header-color: #074778; // background color of the site header
 $site-title-color: #FF872A; // color of the site title / authors
+$site-footer-color: #074778; // background color of the site header
 
-$link-header-base-color: #FFFFFF; // color of a linnk in the site header
-$link-header-hover-color: #FF9D52; // color of a link in the site header when hovering
+
 $link-base-color: #FF872A; // color of a regular link
 $link-visited-color: #FF872A; // color of a regular link when visited
 $link-hover-color: #FF9D52; // color of a regular link upon hover
+$link-header-base-color: #FFFFFF; // color of a linnk in the site header
+$link-header-hover-color: #FF9D52; // color of a link in the site header when hovering
+$link-footer-base-color: #FFFFFF; // color of a linnk in the site footer
+$link-footer-hover-color: #FF9D52; // color of a link in the site footer when hovering
 
 $body-text-color: #000000; // color of text inside paragraphs of body of the site
+$header-text-color: #FFFFFF; // color of regular text in the header
+$footer-text-color: #FFFFFF; // color of regular text in the footer
 
 $search-bar-background: #6EA7D3; // background color for the search bar
 $search-bar-results: #ffe1c9; // color for the results of the search
 $search-bar-border: #074778; // color for the border surrounding the search bar
 
-$code-block-color: #1F2933; // only used if using <code> tags to quote code in your posts/pages, otherwise ignore
+$code-block-color: #1F2933; // don't change this unless you knwo what you are doing, only used if using <code> tags to quote code in your posts/pages
 
 /* ===== FONTS ===== */
 // To change fonts, you need TWO things, to IMPORT the font (which fetches the font files), and to set the name of the font in the variable settings
@@ -40,4 +46,5 @@ $body-font-style: sans-serif; // either serif or sans serif
 
 $site-header-height: 78px; // the size of the site header, used to place the top of the site's content
 $site-header-width: 100%; // width of the site header, keep 100% for full width, or 1000px for 1000 pixels wide
-$site-content-width: 1000px; // the width of the container for the site's content
+$site-content-width: 1232; // the width of the container for the site's content
+$site-footer-width: 1232; // the width of the container fo the site's footer... delete or ignore if not using a footer
